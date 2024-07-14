@@ -1,0 +1,72 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 472-160-018
+127.0.0.1 - - [14/Jul/2024 01:58:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 01:58:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:21:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:21:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:21:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:21:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:21:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:21:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:21:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:30:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:39:09] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:39:15] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:39:19] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:39:24] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:39:33] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:41:51] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:42:18] "[33mGET /sendmail=destiny@destinedcodes.com HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:42:35] "[33mGET /sendmail=destiny@destinedcodes.com HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:42:37] "[33mGET /sendmail=destiny@destinedcodes.com HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:42:38] "[33mGET /sendmail=destiny@destinedcodes.com HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:42:45] "[33mGET /sendmail=destiny@destinedcodes.com HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:42:50] "GET /?sendmail=destiny@destinedcodes.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:43:57] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:44:14] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:44:15] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:44:17] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:44:19] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:46:20] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:46:25] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:46:30] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:46:37] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:46:40] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:46:42] "GET /?sendmail=jacinthdavid70@gmail.com HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:48:05] "[35m[1mGET /talktome HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/jacinth/.local/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/jacinth/.local/lib/python3.10/site-packages/flask/app.py", line 1476, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/jacinth/.local/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jacinth/.local/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jacinth/.local/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jacinth/.local/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/jacinth/devops-stage-3/app.py", line 131, in talktome
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+NameError: name 'time' is not defined
+127.0.0.1 - - [14/Jul/2024 07:48:06] "GET /talktome?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:48:06] "GET /talktome?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jul/2024 07:48:07] "GET /talktome?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/home/jacinth/devops-stage-3/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 472-160-018
+ * Detected change in '/home/jacinth/devops-stage-3/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 472-160-018
+127.0.0.1 - - [14/Jul/2024 07:49:31] "[33mGET /logs HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Jul/2024 07:49:36] "[35m[1mGET /log HTTP/1.1[0m" 500 -
