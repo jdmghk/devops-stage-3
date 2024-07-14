@@ -21,6 +21,7 @@ sudo apt-get update
 -sudo nano /etc/nginx/sites-available/messaging_system
 
 Add the following configuration:
+```
 server {
     listen 80;
     server_name localhost;
@@ -31,7 +32,7 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
-
+```
 -sudo ln -s /etc/nginx/sites-available/messaging_system /etc/nginx/sites-enabled/
 -sudo nginx -t
 -sudo systemctl restart nginx
