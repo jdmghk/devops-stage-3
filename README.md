@@ -1,26 +1,31 @@
 ``` My HNG Devops Stage 3 Project ```
 
-HNG TASK 3
-
-............................
+# HNG TASK 3
+```
 sudo apt-get update
-
-```Install Rabbitmq-server```
+```
+# Install Rabbitmq-server
+```
 -touch rabbitmq.sh
 -code rabbitmq.sh
 -chmod +x rabbitmq.sh
 -./rabbitmq.sh
 -sudo systemctl start rabbitmq-server -d
+```
 
-```Install Celery```
+# Install Celery
+```
 -pip install celery
+```
 
-```Install Nginx```
+# Install Nginx
+```
 -sudo apt install nginx -y
 
 -sudo nano /etc/nginx/sites-available/messaging_system
+```
 
-Add the following configuration:
+# Add the following configuration:
 ```
 server {
     listen 80;
@@ -33,11 +38,14 @@ server {
     }
 }
 ```
+```
 -sudo ln -s /etc/nginx/sites-available/messaging_system /etc/nginx/sites-enabled/
 -sudo nginx -t
 -sudo systemctl restart nginx
+```
 
-```Install Ngrok via Apt```
+# Install Ngrok via Apt
+```
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 	| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
 	&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
@@ -46,12 +54,14 @@ curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 	&& sudo apt install ngrok
 
 ngrok config add-authtoken 2jBLGgpKIVbjL0GzCVlkMYYfAoC_6GUQ9n2bAKphWC7UaBtqm
+```
 
-
-```Install python and env variables```
+# Install python and env variables
+```
 sudo apt-get install python3-venv
 python3 -m venv messaging_system
 source messaging_system/bin/queue
+```
 
 
 ```pip install Flask```
@@ -59,13 +69,15 @@ source messaging_system/bin/queue
 ```pip install celery```
 ```pip install Flask-mail```
 
-
+```
 sudo celery -A app.celery worker
 
 nohup python3 app.py > app.log 2>&1 &
 
-ngrok http --domain=midge-neutral-commonly.ngrok-free.app 80
+ngrok http --domain=midge-neutral-commonly.ngrok-free.app 5000
+
+```
 
 
-```Send E-Mail```
+# Send E-Mail
 Go to midge-neutral-commonly.ngrok-free.app//sendmail?=example@gmail.com to send mail
